@@ -40,9 +40,9 @@ nav ul li a {
   font-size: 12px;
 }
 
-/* Banner section (first section in main) */
+/* Banner section */
 main > section:first-of-type {
-  background-image: url('./images/Object.png'); /* Replace with correct image path */
+  background-image: url('./images/Object.png'); /* Use your correct path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -75,7 +75,7 @@ main > section:first-of-type button {
   margin-top: 30px;
 }
 
-/* Learn from pros sub-section */
+/* Learn from pros section */
 main > section:first-of-type > div:nth-of-type(2) {
   margin-top: 100px;
 }
@@ -120,4 +120,36 @@ main > section:first-of-type p {
   font-size: 14px;
   font-style: italic;
   color: #C271FF;
+}
+
+/* QUOTE SECTION (second section in main) */
+main > section:nth-of-type(2) {
+  background-color: #C271FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px;
+  gap: 60px;
+}
+
+main > section:nth-of-type(2) img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+main > section:nth-of-type(2) blockquote {
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+main > section:nth-of-type(2) h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main > section:nth-of-type(2) p {
+  font-size: 16px;
 }
