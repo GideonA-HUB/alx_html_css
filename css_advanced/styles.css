@@ -73,7 +73,6 @@ main > section:first-of-type button {
   cursor: pointer;
 }
 
-/* Learn from the pros */
 main > section:first-of-type h2 {
   font-size: 32px;
   font-weight: 700;
@@ -154,4 +153,96 @@ main > section:nth-of-type(2) > div {
   align-items: center;
   max-width: 900px;
   gap: 50px;
+}
+
+/* === Task 4: Videos Section (simplified version) === */
+main > section:nth-of-type(3) {
+  padding: 80px 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+
+main > section:nth-of-type(3) h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.video-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.video-cards .card {
+  text-align: left;
+}
+
+.video-cards .card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-cards .card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.video-cards .card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* === Task 5: Membership Section === */
+main > section:nth-of-type(4) {
+  background-color: #071629;
+  color: #fff;
+  text-align: center;
+  padding: 80px 30px;
+}
+
+main > section:nth-of-type(4) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+main > section:nth-of-type(4) h2 span {
+  color: #C271FF;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.membership-grid .item img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.membership-grid .item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.membership-grid .item p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+main > section:nth-of-type(4) button {
+  background-color: #C271FF;
+  border: none;
+  padding: 14px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
 }
