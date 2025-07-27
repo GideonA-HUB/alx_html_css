@@ -1,20 +1,28 @@
-/* Reset some defaults */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* === Task 1: Base Setup === */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: #071629;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+  color: #fff;
 }
 
-/* Header */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Task 2: Header and Banner === */
 header {
-  background-color: #071629;
-  padding: 20px 60px;
+  background-image: url('./images/background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 30px 60px;
 }
 
 nav {
@@ -24,132 +32,126 @@ nav {
 }
 
 nav img {
-  height: 30px;
+  height: 40px;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-/* Banner section */
 main > section:first-of-type {
-  background-image: url('./images/Object.png'); /* Use your correct path */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   text-align: center;
-  padding: 120px 20px 50px;
+  padding: 100px 30px 80px;
 }
 
 main > section:first-of-type h1 {
   font-size: 120px;
-  font-weight: bold;
-  margin-bottom: 30px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #fff;
 }
 
 main > section:first-of-type span {
-  display: inline-block;
   font-size: 16px;
-  font-weight: 700;
-  margin: 10px;
+  font-weight: 600;
+  margin: 0 10px;
+  color: #fff;
 }
 
 main > section:first-of-type button {
+  margin-top: 40px;
   background-color: #C271FF;
   border: none;
-  border-radius: 22px;
-  padding: 13px 30px;
+  padding: 12px 30px;
+  border-radius: 20px;
+  color: white;
   font-size: 14px;
   font-weight: 600;
-  color: white;
   cursor: pointer;
-  margin-top: 30px;
 }
 
-/* Learn from pros section */
-main > section:first-of-type > div:nth-of-type(2) {
-  margin-top: 100px;
-}
-
+/* Learn from the pros */
 main > section:first-of-type h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 main > section:first-of-type h2 span {
   color: #C271FF;
 }
 
-main > section:first-of-type > div:nth-of-type(2) > div {
+main > section:first-of-type > div:last-child {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 80px;
+  margin-top: 50px;
 }
 
-main > section:first-of-type > div:nth-of-type(2) > div > div {
+main > section:first-of-type > div:last-child > div {
   text-align: center;
   max-width: 180px;
 }
 
-main > section:first-of-type img {
+main > section:first-of-type > div:last-child img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 15px;
+  height: 120px;
+  width: 120px;
 }
 
-main > section:first-of-type h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
+main > section:first-of-type > div:last-child h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #fff;
 }
 
-main > section:first-of-type p {
+main > section:first-of-type > div:last-child p {
   font-size: 14px;
   font-style: italic;
-  color: #C271FF;
+  color: #fff;
 }
 
-/* QUOTE SECTION (second section in main) */
+/* === Task 3: Quotes Section === */
 main > section:nth-of-type(2) {
   background-color: #C271FF;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 60px;
-  gap: 60px;
+  padding: 60px 30px;
+  color: #fff;
 }
 
 main > section:nth-of-type(2) img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
+  margin-right: 50px;
 }
 
 main > section:nth-of-type(2) blockquote {
-  font-style: italic;
   font-size: 22px;
+  font-style: italic;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 main > section:nth-of-type(2) h3 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 main > section:nth-of-type(2) p {
-  font-size: 16px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+main > section:nth-of-type(2) > div {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  gap: 50px;
 }
