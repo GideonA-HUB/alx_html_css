@@ -1,0 +1,38 @@
+/* Import base styles */
+@import url('4-styles.css');
+
+/* Animation keyframes */
+@keyframes floatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+/* WHAT WE DO section - floating icons on hover */
+.service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Optional: make icons pulse continuously */
+.service-item .icon {
+    display: inline-block;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+/* OUR RESULTS section - bounce animation on hover */
+.result-circle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: floatUp 4s infinite ease-in-out;
+}
+.result-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,55 @@
+@import url('7-styles.css');
+
+/* ----- HAMBURGER STYLES ----- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    justify-content: space-between;
+}
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu hidden by default */
+#nav-menu {
+    transition: max-height 0.3s ease;
+}
+
+/* ----- MOBILE RESPONSIVE ----- */
+@media (max-width: 480px) {
+    .hamburger {
+        display: flex;
+    }
+    #nav-menu {
+        overflow: hidden;
+        max-height: 0;
+        background: #111;
+    }
+    #nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    #nav-menu li {
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+    }
+    #nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    /* When menu is open */
+    #nav-menu.open {
+        max-height: 300px;
+    }
+}
